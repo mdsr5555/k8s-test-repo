@@ -10,7 +10,8 @@ steps:
 - task: DownloadSecureFile@1
   name: publickey
   inputs:
-    secureFile: 'azure_rsa.pub'
+    secureFile: 'id_rsa.pub'
+    retryCount: '5'
 
 - task: TerraformCLI@0
   inputs:
