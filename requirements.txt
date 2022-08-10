@@ -1,2 +1,39 @@
 flask
 greenlet
+
+
+
+/*
+
+This video specifically talks about creating K8s cluster using Azure Pipeline and Terraform. 
+How Terraform can be used to create Infrastructure as a code.
+Vidoe Link part1: https://www.youtube.com/watch?v=e0kSNSN6idE  part2: https://www.youtube.com/watch?v=U5Ti0LjxvLE
+
+Few  helpful Links given below :-
+
+GitHub Repo used in this video :-
+
+https://github.com/kousikm/azure-devo...
+
+Azure Marketplace TerraformCLI plugins:-
+
+Terraform 1 (https://marketplace.visualstudio.com/...)
+
+Terraform 2 (https://marketplace.visualstudio.com/...)
+
+Azure CLI commands used in this video :-
+
+az login
+az ad sp create-for-rbac --role="Contributor" --scopes="subscriptions/SUBSCRIPTION_ID"
+
+SSH key generation to create public key :-
+
+ssh-keygen -m PEM -t rsa -b 4096
+
+Connecting AKS  from Azure CLI :-
+
+az aks get-credentials --name  K8_CLUSTER_NAME --resource-group K8_GROUP_NAME
+az aks enable-addons --addons kube-dashboard --resource-group K8_GROUP_NAME --name K8_CLUSTER_NAME
+az aks browse --resource-group K8_GROUP_NAME --name K8_CLUSTER_NAME
+
+*/
