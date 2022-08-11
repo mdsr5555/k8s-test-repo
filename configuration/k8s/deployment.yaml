@@ -26,9 +26,9 @@ metadata:
 spec:
   ports:
   - nodePort: 30702
-    port: 80
+    port: 5000
     protocol: TCP
-    targetPort: 80
+    targetPort: 5000
   selector:
     app: hello-api
   sessionAffinity: None
