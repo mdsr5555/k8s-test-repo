@@ -1,6 +1,8 @@
 trigger:
 - master
 
+pool: default
+
 resources:
 - repo: self
 
