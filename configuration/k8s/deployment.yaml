@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-api
-        image: kousikm/hello_rest_api
+        image: mdsr5555/k8s-test-repository
 ---        
 apiVersion: v1
 kind: Service
